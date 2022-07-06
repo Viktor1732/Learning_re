@@ -1,0 +1,25 @@
+<!DOCTYPE xmlmap>
+<xmlmap>
+    <parametrs>
+    <name>map</name>
+    <scale>750000</scale>
+    <issuedate>20060828</issuedate>
+    <correctiondate>20060828</correctiondate>
+    </parametrs>
+    <primitive code="43" >
+        <attribute number="133" value="3000000" />
+        <attribute number="174" value="20" />
+        <primitive pointType="2" name="2" />
+        <point lon="40.8482" lat="52.6367" />
+        <point lon="40.8232" lat="52.6274" />
+        <point lon="40.8486" lat="52.6154" />
+        <point lon="40.8764" lat="52.6152" />
+        <point lon="40.8872" lat="52.6025" />
+        <point lon="40.8986" lat="52.6000" />
+        <point lon="40.8346" lat="52.6031" />
+        <point lon="40.5775" lat="52.6864" />
+        <point lon="40.3668" lat="52.6578" />
+        <point lon="40.6586" lat="52.6255" />
+    </primitive>
+    </object>
+</xmlmap>
