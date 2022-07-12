@@ -31,11 +31,11 @@ text = """Москва
 # list_town = re.sub(r"\s*(\w+)\s*", r"<option>\1</option\n", text)
 # print(list_town)
 
-# count = 0
-# # def replFind(m):  # Match
-#     global count
-#     count += 1
-#     return f"<option value='{count}'>{m.group(1)}</option>\n"
+count = 0
+def replFind(m):  # Match
+    global count
+    count += 1
+    return f"<option value='{count}'>{m.group(1)}</option>\n"
 #
 # # list_town = re.sub(r"\s*(\w+)\s*", replFind, text)
 # print(list_town)
@@ -47,3 +47,7 @@ text = """Москва
 
 
 #re.compile(pattern, flag) - производит компиляцию рег.выражения и возвращает экземпляр класса Pattern
+rx = re.compile(r"\s*(\w+)\s*")
+list_town, total = rx.subn(r"<option>\1</option>\n", text)
+list_town2 = rx.sub(replFind, text)
+print(list_town, total, list_town2, sep="\n")
